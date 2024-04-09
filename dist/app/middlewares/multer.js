@@ -8,7 +8,7 @@ const multer_1 = __importDefault(require("multer"));
 const path_1 = __importDefault(require("path"));
 const storage = multer_1.default.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, './public/images');
+        cb(null, './src/public/images');
     },
     filename: function (req, file, cb) {
         console.log(file);

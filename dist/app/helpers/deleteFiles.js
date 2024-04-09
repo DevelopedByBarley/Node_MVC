@@ -11,7 +11,7 @@ const deleteFiles = (fileNames) => {
     if (Array.isArray(fileNames)) {
         // Végigiterálunk az összes fájlnéven
         fileNames.forEach((fileName) => {
-            const filePath = "./public/images/" + fileName;
+            const filePath = "./src/public/images/" + fileName;
             fs.unlink(filePath, (err) => {
                 if (err) {
                     console.error('Error deleting file:', err);

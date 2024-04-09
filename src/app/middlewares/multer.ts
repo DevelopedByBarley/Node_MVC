@@ -6,7 +6,7 @@ type DestinationCallback = (error: Error | null, destination: string) => void
 
 const storage = multer.diskStorage({
   destination: function (req: Request, file: Express.Multer.File, cb: DestinationCallback) {
-    cb(null, './public/images');
+    cb(null, './src/public/images');
   },
   filename: function (req: Request, file: Express.Multer.File, cb: DestinationCallback) {
     console.log(file);
